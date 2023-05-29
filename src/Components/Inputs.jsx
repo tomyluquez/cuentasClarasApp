@@ -45,7 +45,6 @@ const Inputs = ({ value, peoples, register, errors }) => {
           } border-b-2 border-${
             isDarkMode ? "darkLabel" : "lightLabel"
           } focus:border-b-4`}
-          defaultValue={peoples ? peoples[`Gasto persona ${value}`] : ""}
           placeholder={`Gasto persona ${value}`}
           {...register(`Gasto persona ${value}`, {
             required: true,
