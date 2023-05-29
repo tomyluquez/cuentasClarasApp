@@ -1,6 +1,7 @@
 const getAccounts = (arrPeoples, expensesInd) => {
   let accounts = arrPeoples.map((person) => ({ ...person }));
-  console.log(accounts);
+
+  accounts.sort((a, b) => b.gasto - a.gasto);
   const expensePerPerson = Math.round(
     expensesInd.reduce((a, b) => a + b) / accounts.length
   );

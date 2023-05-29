@@ -16,7 +16,7 @@ function App() {
         isDarkMode ? "bg-darkBg" : "bg-lightBg"
       } flex items-center flex-col text-${
         isDarkMode ? "darkColor" : "lightColor"
-      } duration-300`}
+      } duration-500`}
     >
       <Router>
         <Header setOpen={setOpen} />

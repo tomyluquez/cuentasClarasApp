@@ -1,5 +1,5 @@
 const getPaymentRoute = (accounts) => {
-  let payment = [...accounts];
+  let payment = accounts.map((person) => ({ ...person })).reverse();
 
   const arrPayment = [];
 
@@ -27,6 +27,7 @@ const getPaymentRoute = (accounts) => {
       }
     }
   }
+
   return arrPayment;
 };
 

@@ -9,7 +9,7 @@ import Accounts from "../Components/Accounts";
 import PaymentsRoute from "../Components/PaymentsRoute";
 import ButtonsShare from "../Components/ButtonsShare";
 
-const ThridSlide = ({ peoples, slider, setSlider }) => {
+const ThridSlide = ({ peoples, setSlider }) => {
   const [arrPeoples, setArrPeoples] = useState(null);
   const [total, setTotal] = useState(null);
   const [accounts, setAccounts] = useState(null);
@@ -29,8 +29,6 @@ const ThridSlide = ({ peoples, slider, setSlider }) => {
     setLoading(false);
   }, [peoples]);
 
-  console.log(paymentRoute);
-
   if (loading) {
     return <div>...CARGANDO</div>;
   }
@@ -39,7 +37,7 @@ const ThridSlide = ({ peoples, slider, setSlider }) => {
       <Dashboard total={total} quantity={arrPeoples.length} />
       <Accounts accounts={accounts} />
       <PaymentsRoute paymentRoute={paymentRoute} />
-      <ButtonsShare slider={slider} setSlider={setSlider} />
+      <ButtonsShare setSlider={setSlider} />
     </div>
   );
 };

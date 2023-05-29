@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const ButtonsShare = ({ slider, setSlider }) => {
+const ButtonsShare = ({ setSlider }) => {
   const isDarkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
@@ -10,9 +10,9 @@ const ButtonsShare = ({ slider, setSlider }) => {
         className={`w-32 ${
           isDarkMode ? "bg-darkButton" : "bg-lightButton"
         } text-light-color py-2 rounded-xl`}
-        onClick={() => setSlider(slider - 1)}
+        onClick={() => setSlider(1)}
       >
-        Atras
+        Nueva Cuenta
       </button>
       <button
         className={`w-32 ${
