@@ -14,6 +14,7 @@ export default {
         darkButton: "#16bbf7",
         lightLabel: "#9b9b9b",
         darkLabel: "#fafafa",
+        whatsButton: "#25D366",
       },
     },
   },

@@ -9,6 +9,7 @@ import { useSelector } from "react-redux";
 const Start = ({ sliderPosition, setSliderPosition }) => {
   const [quantity, setQuantity] = useState(null);
   const [peoples, setPeoples] = useState(null);
+  const [nameAccount, setNameAccount] = useState(null);
   const isDarkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
@@ -48,6 +49,7 @@ const Start = ({ sliderPosition, setSliderPosition }) => {
                 slider={sliderPosition}
                 setSlider={setSliderPosition}
                 setQuantity={setQuantity}
+                setNameAccount={setNameAccount}
               />
             )}
             {sliderPosition === 2 && (
@@ -64,6 +66,7 @@ const Start = ({ sliderPosition, setSliderPosition }) => {
                 peoples={peoples}
                 slider={sliderPosition}
                 setSlider={setSliderPosition}
+                nameAccount={nameAccount}
               />
             )}
           </div>
