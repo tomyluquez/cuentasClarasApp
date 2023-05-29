@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 
 function App() {
   const [open, setOpen] = useState(false);
+  const [sliderPosition, setSliderPosition] = useState(0);
   const isDarkMode = useSelector((state) => state.darkMode.darkMode);
 
   return (
@@ -20,10 +21,23 @@ function App() {
     >
       <Router>
         <Header setOpen={setOpen} />
-        <Slider open={open} setOpen={setOpen} />
+        <Slider
+          open={open}
+          setOpen={setOpen}
+          setSliderPosition={setSliderPosition}
+        />
         {open && <Shadow setOpen={setOpen} />}
         <Routes>
-          <Route exact path="/" element={<Start />} />
+          <Route
+            exact
+            path="/"
+            element={
+              <Start
+                sliderPosition={sliderPosition}
+                setSliderPosition={setSliderPosition}
+              />
+            }
+          />
         </Routes>
       </Router>
     </div>

@@ -17,12 +17,12 @@ const Header = ({ setOpen }) => {
         isDarkMode ? "dark" : "light"
       }-color p-4 text-2xl`}
     >
-      <RiMenu2Line onClick={() => setOpen(true)} />
-      <h1>Cuentas Claras</h1>
+      <RiMenu2Line className="cursor-pointer" onClick={() => setOpen(true)} />
+      <h1 className="cursor-pointer">Cuentas Claras</h1>
       {!isDarkMode ? (
-        <BsFillMoonFill onClick={handleDarkmode} />
+        <BsFillMoonFill className="cursor-pointer" onClick={handleDarkmode} />
       ) : (
-        <FiSun onClick={handleDarkmode} />
+        <FiSun className="cursor-pointer" onClick={handleDarkmode} />
       )}
     </div>
   );

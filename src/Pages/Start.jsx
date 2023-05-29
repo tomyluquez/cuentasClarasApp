@@ -6,8 +6,7 @@ import SecondSlide from "./SecondSlide";
 import ThridSlide from "./ThridSlide";
 import { useSelector } from "react-redux";
 
-const Start = () => {
-  const [sliderPosition, setSliderPosition] = useState(0);
+const Start = ({ sliderPosition, setSliderPosition }) => {
   const [quantity, setQuantity] = useState(null);
   const [peoples, setPeoples] = useState(null);
   const isDarkMode = useSelector((state) => state.darkMode.darkMode);
