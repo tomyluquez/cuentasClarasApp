@@ -48,7 +48,7 @@ const Inputs = ({ value, peoples, register, errors }) => {
           placeholder={`Gasto persona ${value}`}
           {...register(`Gasto persona ${value}`, {
             required: true,
-            pattern: /^[0-9]*$/,
+            pattern: /^[0-9-]*$/,
           })}
         />
         <label htmlFor={`Gasto persona ${value}`} className="form__label">

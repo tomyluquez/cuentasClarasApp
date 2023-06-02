@@ -25,7 +25,7 @@ const Start = ({ sliderPosition, setSliderPosition }) => {
           <div
             className={`containerSlide ${
               isDarkMode ? "bg-darkBgCard" : "bg-lightBgCard"
-            } w-96 h-96 text-light-color rounded-lg`}
+            } w-96 h-3/4 text-light-color rounded-lg`}
           >
             {sliderPosition === 0 && (
               <div className="flex flex-col items-center justify-between h-full p-4 text-center">

@@ -10,7 +10,6 @@ const ButtonsShare = ({
   total,
 }) => {
   const isDarkMode = useSelector((state) => state.darkMode.darkMode);
-  console.log(paymentRoute);
 
   return (
     <div className="flex gap-2">

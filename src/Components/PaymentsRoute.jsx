@@ -4,7 +4,7 @@ const PaymentsRoute = ({ paymentRoute }) => {
   return (
     <div>
       {paymentRoute.map((route, index) => (
-        <span key={index}>{route}</span>
+        <div key={index}>{route}</div>
       ))}
     </div>
   );
