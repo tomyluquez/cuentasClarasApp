@@ -22,7 +22,9 @@ const ButtonsShare = ({
         Nueva Cuenta
       </button>
       <WhatsappShareButton
-        url={`Hicimos la division de gastos para ${nameAccount}.\n\nEl total gastado es *$${total}*.\n\nEl total por persona es *$${expensePerPerson}*. \n\n ${paymentRoute}`}
+        url={`Hicimos la division de gastos para ${nameAccount}.\n\nEl total gastado es *$${total}*.\n\nEl total por persona es *$${Math.floor(
+          expensePerPerson
+        )}*. \n\n ${paymentRoute}`}
       >
         <div className="w-32 flex items-center justify-around bg-whatsButton rounded-xl">
           <span>Compartir</span>
